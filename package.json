@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "commit": "node ./node_modules/cz-customizable/standalone.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
   "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",
@@ -12,7 +13,8 @@
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "^6.3.0",
-    "husky": "^7.0.0"
+    "husky": "^7.0.0",
+    "standard-version": "^9.3.2"
   },
   "config": {
     "cz-customizable": {
