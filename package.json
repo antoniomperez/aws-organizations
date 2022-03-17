@@ -2,7 +2,19 @@
   "name": "aws-organizations",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "commit": "node ./node_modules/cz-customizable/standalone.js"
+  },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
   "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "^6.3.0"
+  },
+  "config": {
+    "cz-customizable": {
+      "config": "config/cz-config.js"
+    }
+  }
 }
