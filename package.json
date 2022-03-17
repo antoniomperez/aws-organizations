@@ -1,0 +1,8 @@
+{
+  "name": "aws-organizations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:antoniomperez/aws-organizations.git",
+  "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",
+  "license": "MIT"
+}
