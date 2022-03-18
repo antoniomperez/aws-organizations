@@ -5,15 +5,15 @@
   "scripts": {
     "commit": "node ./node_modules/cz-customizable/standalone.js",
     "prepare": "husky install",
-    "dotenv": "node ./scripts/env.js",
     "release": "standard-version",
     "release:alpha": "yarn release --prerelease alpha",
     "release:beta": "yarn release --prerelease beta",
     "release:rc": "yarn release --prerelease rc",
+    "tf:init": "yarn dotenv && terraform init",
     "format": "terraform fmt",
     "validate": "terraform validate",
-    "plan": " yarn dotenv && terraform plan",
-    "apply": "yarn dotenv && terraform apply",
+    "plan": "terraform plan",
+    "apply": "terraform apply",
     "deploy": "yarn release:alpha && yarn dotenv && yarn apply -auto-approve && git push --follow-tags"
   },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
