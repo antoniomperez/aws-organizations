@@ -1,6 +1,6 @@
 {
   "name": "aws-organizations",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "main": "index.js",
   "scripts": {
     "commit": "node ./node_modules/cz-customizable/standalone.js",
@@ -14,7 +14,7 @@
     "validate": "terraform validate",
     "plan": "terraform plan",
     "apply": "terraform apply",
-    "deploy": "yarn release:alpha && yarn dotenv && yarn apply -auto-approve && git push --follow-tags"
+    "deploy": "yarn release:alpha && yarn apply -auto-approve && git push --follow-tags"
   },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
   "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",
