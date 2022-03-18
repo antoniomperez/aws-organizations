@@ -5,15 +5,16 @@
   "scripts": {
     "commit": "node ./node_modules/cz-customizable/standalone.js",
     "prepare": "husky install",
+    "dotenv": "node ./scripts/env.js",
     "release": "standard-version",
     "release:alpha": "yarn release --prerelease alpha",
     "release:beta": "yarn release --prerelease beta",
     "release:rc": "yarn release --prerelease rc",
     "format": "terraform fmt",
     "validate": "terraform validate",
-    "plan": "terraform plan",
-    "apply": "terraform apply",
-    "deploy": "yarn release:alpha && yarn apply -auto-approve && git push --follow-tags"
+    "plan": " yarn dotenv && terraform plan",
+    "apply": "yarn dotenv && terraform apply",
+    "deploy": "yarn release:alpha && yarn dotenv && yarn apply -auto-approve && git push --follow-tags"
   },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
   "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "^6.3.0",
+    "dotenv": "^16.0.0",
     "husky": "^7.0.0",
     "standard-version": "^9.3.2"
   },
