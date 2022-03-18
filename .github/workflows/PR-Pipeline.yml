@@ -75,5 +75,5 @@ jobs:
       - name: bump
         run: yarn release:beta --dry-run
 
-      - name: Pushing Release tag
-        run: git push --follow-tags origin HEAD:${GITHUB_HEAD_REF}
+      # - name: Pushing Release tag
+      #  run: git push --follow-tags origin HEAD:${GITHUB_HEAD_REF}
