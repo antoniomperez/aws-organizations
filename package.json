@@ -7,6 +7,8 @@
     "prepare": "husky install",
     "release": "standard-version",
     "release:alpha": "yarn release --prerelease alpha",
+    "release:beta": "yarn release --prerelease beta",
+    "release:rc": "yarn release --prerelease rc",
     "format": "terraform fmt",
     "validate": "terraform validate",
     "plan": "terraform plan",
