@@ -14,7 +14,7 @@
     "validate": "terraform validate",
     "plan": "terraform plan",
     "apply": "terraform apply",
-    "deploy": "yarn release:alpha && yarn apply -auto-approve && git push --follow-tags"
+    "deploy:local": "yarn release:alpha && yarn apply -auto-approve"
   },
   "repository": "git@github.com:antoniomperez/aws-organizations.git",
   "author": "Antonio Márquez Pérez <antonio.marquezperez@everis.nttdata.com>",

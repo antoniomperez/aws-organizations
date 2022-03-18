@@ -6,3 +6,5 @@ node_modules
 # Terraform files
 .terraform
 .terraform.lock.hcl
+*.tfstate
+*.backup
